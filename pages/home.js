@@ -19,7 +19,7 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 
 import EventsSummary from '../components/homePage/eventsSummary';
 
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
   const layout = useWindowDimensions();
 
   const menuItems = [
@@ -78,9 +78,18 @@ const Home = ({navigation}) => {
             showsHorizontalScrollIndicator={false}
           >
             {menuItems.map((item, index) => (
-              <View style={styles.menuItemWrapper} key={index}>
+              <View
+                style={[
+                  styles.menuItemWrapper,
+                  index === menuItems.length - 1 && styles.lastMenuItemWrapper,
+                ]}
+                key={index}
+              >
                 <TouchableOpacity
-                  style={styles.imgWrapper}
+                  style={[
+                    styles.imgWrapper,
+                    index === menuItems.length - 1 && styles.lastItemImgWrapper,
+                  ]}
                   onPress={() => navigation.navigate(item.route)}
                 >
                   {item.icon}
@@ -140,6 +149,9 @@ const styles = StyleSheet.create({
     marginRight: 25,
     alignItems: 'center',
   },
+  lastMenuItemWrapper: {
+    marginRight: 50,
+  },
   imgWrapper: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -147,6 +159,9 @@ const styles = StyleSheet.create({
     width: 62,
     backgroundColor: '#18d68f',
     borderRadius: 50,
+  },
+  lastItemImgWrapper: {
+    backgroundColor: '#ffa500',
   },
   menuText: {
     paddingTop: 10,
@@ -161,7 +176,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 15,
     paddingLeft: 15,
     paddingRight: 15,
-    marginTop: -15
+    marginTop: -15,
   },
 });
 
