@@ -46,7 +46,7 @@ const EventsSummary = () => {
         showsHorizontalScrollIndicator={false}
       >
         {events.map((event) => (
-          <View style={styles.eventSummaryCard}>
+          <View key={event.id} style={styles.eventSummaryCard}>
             <EventSummaryCard key={event.id} event={event} />
           </View>
         ))}

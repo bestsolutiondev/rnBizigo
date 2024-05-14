@@ -11,8 +11,8 @@ const TabsView = ({ tabs }) => {
   return (
     <View style={styles.wrapper}>
       {tabs.map((tab) => (
-        <TouchableOpacity onPress={() => setActiveTabIndex(tab.id)}>
-          <Tab tab={tab} active={tab.id === activeTabIndex} key={tab.id} />
+        <TouchableOpacity onPress={() => setActiveTabIndex(tab.id)} key={tab.id} >
+          <Tab tab={tab} active={tab.id === activeTabIndex} />
         </TouchableOpacity>
       ))}
     </View>
