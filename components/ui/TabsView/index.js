@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, useWindowDimensions, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, TouchableOpacity } from 'react-native';
 
 import Tab from './Tab/index';
 
 const TabsView = ({ tabs }) => {
-  const layout = useWindowDimensions();
 
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 

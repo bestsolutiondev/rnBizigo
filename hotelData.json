@@ -1,0 +1,559 @@
+[
+  {
+    "id": "2095",
+    "name": "Ramada by Wyndham Soma",
+    "images": [
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/15000000/14700000/14699400/14699348/296cc85d_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/15000000/14700000/14699400/14699348/004d23b7_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/15000000/14700000/14699400/14699348/dd581fa5_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      }
+    ],
+    "location": {
+      "longitude": "27.549109",
+      "latitude": "39.183853"
+    },
+    "star": 3,
+    "cityName": "Adana",
+    "regionName": null,
+    "districtName": "Girne",
+    "countryName": "Türkiye",
+    "price": {
+      "amount": 785.4,
+      "currency": "TRY",
+      "symbol": "TL",
+      "averagePrice": 157.08,
+      "isDefault": true,
+      "averageRoomPrices": {
+        "singleSalePrice": 157.08,
+        "doubleSalePrice": 314.16,
+        "tripleSalePrice": 471.24,
+        "average": 157.08,
+        "currencyCode": null,
+        "singleSalePriceTotal": 0,
+        "doubleSalePriceTotal": 0,
+        "tripleSalePriceTotal": 0,
+        "selectedSalePriceId": 0,
+        "priceDays": null,
+        "areThereMultiplePriceLists": false,
+        "singlePurchasePrice": 0,
+        "doublePurchasePrice": 0,
+        "triplePurchasePrice": 0
+      }
+    },
+    "featureTypes": [],
+    "overall": 4.4,
+    "policy": "available",
+    "policyTooltip": "Satın alabilirsiniz",
+    "roomNames": ["Standart Oda"],
+    "boardType": "Oda Kahvaltı",
+    "roomTypes": null,
+    "warningText": null,
+    "certificate": null,
+    "hotelCategoryTypes": [
+      {
+        "id": 14,
+        "name": "Otel"
+      }
+    ],
+    "isRecommended": false,
+    "roomSize": "",
+    "roomBedType": null,
+    "roomDescription": null,
+    "specialPeriodClosure": false
+  },
+  {
+    "id": "2099",
+    "name": "Rixos Pera Istanbul",
+    "images": [
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/5000000/4950000/4944700/4944657/de3d7e9f_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/5000000/4950000/4944700/4944657/134dabec_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/5000000/4950000/4944700/4944657/b8282af1_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      }
+    ],
+    "location": {
+      "longitude": "28.97493",
+      "latitude": "41.033493"
+    },
+    "star": 1,
+    "cityName": "Adana",
+    "regionName": null,
+    "districtName": "Çukurova",
+    "countryName": "Türkiye",
+    "price": {
+      "amount": 3927,
+      "currency": "TRY",
+      "symbol": "TL",
+      "averagePrice": 785.4,
+      "isDefault": true,
+      "averageRoomPrices": {
+        "singleSalePrice": 785.4,
+        "doubleSalePrice": 987.36,
+        "tripleSalePrice": 1110.78,
+        "average": 785.4,
+        "currencyCode": null,
+        "singleSalePriceTotal": 0,
+        "doubleSalePriceTotal": 0,
+        "tripleSalePriceTotal": 0,
+        "selectedSalePriceId": 0,
+        "priceDays": null,
+        "areThereMultiplePriceLists": false,
+        "singlePurchasePrice": 0,
+        "doublePurchasePrice": 0,
+        "triplePurchasePrice": 0
+      }
+    },
+    "featureTypes": [],
+    "overall": 4.4,
+    "policy": "available",
+    "policyTooltip": "Satın alabilirsiniz",
+    "roomNames": ["Standart Oda"],
+    "boardType": "Oda Kahvaltı",
+    "roomTypes": null,
+    "warningText": null,
+    "certificate": null,
+    "hotelCategoryTypes": [
+      {
+        "id": 14,
+        "name": "Otel"
+      }
+    ],
+    "isRecommended": false,
+    "roomSize": "",
+    "roomBedType": null,
+    "roomDescription": null,
+    "specialPeriodClosure": false
+  },
+  {
+    "id": "6",
+    "name": "Adana Hilton SA",
+    "images": [
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/1000000/610000/607900/607889/5905aa94_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/1000000/610000/607900/607889/8a1216a9_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/1000000/610000/607900/607889/2726cb40_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      }
+    ],
+    "location": {
+      "longitude": "35.337597",
+      "latitude": "36.98759"
+    },
+    "star": 5,
+    "cityName": "Adana",
+    "regionName": null,
+    "districtName": "Yüreğir",
+    "countryName": "Türkiye",
+    "price": {
+      "amount": 510,
+      "currency": "EUR",
+      "symbol": "EUR",
+      "averagePrice": 102,
+      "isDefault": true,
+      "averageRoomPrices": {
+        "singleSalePrice": 102,
+        "doubleSalePrice": 153,
+        "tripleSalePrice": 306,
+        "average": 102,
+        "currencyCode": null,
+        "singleSalePriceTotal": 0,
+        "doubleSalePriceTotal": 0,
+        "tripleSalePriceTotal": 0,
+        "selectedSalePriceId": 0,
+        "priceDays": null,
+        "areThereMultiplePriceLists": false,
+        "singlePurchasePrice": 0,
+        "doublePurchasePrice": 0,
+        "triplePurchasePrice": 0
+      }
+    },
+    "featureTypes": [],
+    "overall": 4.4,
+    "policy": "available",
+    "policyTooltip": "Satın alabilirsiniz",
+    "roomNames": ["Standart Oda"],
+    "boardType": "Tam Pansiyon",
+    "roomTypes": null,
+    "warningText": null,
+    "certificate": null,
+    "hotelCategoryTypes": [],
+    "isRecommended": false,
+    "roomSize": "",
+    "roomBedType": null,
+    "roomDescription": null,
+    "specialPeriodClosure": false
+  },
+  {
+    "id": "5",
+    "name": "Akkoç Butik Otel",
+    "images": [
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/11000000/10030000/10026000/10025953/33ec6a1f_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/11000000/10030000/10026000/10025953/f475b22e_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/11000000/10030000/10026000/10025953/4434c2bf_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      }
+    ],
+    "location": {
+      "longitude": "35.324346",
+      "latitude": "37.003116"
+    },
+    "star": 0,
+    "cityName": "Adana",
+    "regionName": null,
+    "districtName": "Seyhan",
+    "countryName": "Türkiye",
+    "price": {
+      "amount": 561,
+      "currency": "USD",
+      "symbol": "USD",
+      "averagePrice": 112.2,
+      "isDefault": true,
+      "averageRoomPrices": {
+        "singleSalePrice": 112.2,
+        "doubleSalePrice": 224.4,
+        "tripleSalePrice": 336.6,
+        "average": 112.2,
+        "currencyCode": null,
+        "singleSalePriceTotal": 0,
+        "doubleSalePriceTotal": 0,
+        "tripleSalePriceTotal": 0,
+        "selectedSalePriceId": 0,
+        "priceDays": null,
+        "areThereMultiplePriceLists": false,
+        "singlePurchasePrice": 0,
+        "doublePurchasePrice": 0,
+        "triplePurchasePrice": 0
+      }
+    },
+    "featureTypes": [],
+    "overall": 4.4,
+    "policy": "available",
+    "policyTooltip": "Satın alabilirsiniz",
+    "roomNames": ["Standart Oda"],
+    "boardType": "Oda Kahvaltı",
+    "roomTypes": null,
+    "warningText": null,
+    "certificate": null,
+    "hotelCategoryTypes": [],
+    "isRecommended": false,
+    "roomSize": "15-22m2",
+    "roomBedType": "French/Twin",
+    "roomDescription": "French/Twin",
+    "specialPeriodClosure": false
+  },
+  {
+    "id": "1731",
+    "name": "Sirin Park Hotel",
+    "images": [
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/15000000/14710000/14700600/14700557/21132b86_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/15000000/14710000/14700600/14700557/cdeda500_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://i.travelapi.com/lodging/15000000/14710000/14700600/14700557/e410cac2_b.jpg",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      }
+    ],
+    "location": {
+      "longitude": "35.327909",
+      "latitude": "36.991552"
+    },
+    "star": 4,
+    "cityName": "Adana",
+    "regionName": null,
+    "districtName": "Seyhan",
+    "countryName": "Türkiye",
+    "price": {
+      "amount": 892.5,
+      "currency": "USD",
+      "symbol": "USD",
+      "averagePrice": 178.5,
+      "isDefault": true,
+      "averageRoomPrices": {
+        "singleSalePrice": 178.5,
+        "doubleSalePrice": 724.2,
+        "tripleSalePrice": 0,
+        "average": 178.5,
+        "currencyCode": null,
+        "singleSalePriceTotal": 0,
+        "doubleSalePriceTotal": 0,
+        "tripleSalePriceTotal": 0,
+        "selectedSalePriceId": 0,
+        "priceDays": null,
+        "areThereMultiplePriceLists": false,
+        "singlePurchasePrice": 0,
+        "doublePurchasePrice": 0,
+        "triplePurchasePrice": 0
+      }
+    },
+    "featureTypes": [],
+    "overall": 4.2,
+    "policy": "available",
+    "policyTooltip": "Satın alabilirsiniz",
+    "roomNames": ["Standart Oda"],
+    "boardType": "Oda Kahvaltı",
+    "roomTypes": null,
+    "warningText": null,
+    "certificate": null,
+    "hotelCategoryTypes": [],
+    "isRecommended": false,
+    "roomSize": "",
+    "roomBedType": null,
+    "roomDescription": null,
+    "specialPeriodClosure": false
+  },
+  {
+    "id": "10",
+    "name": "Emir Royal Hotel",
+    "images": [
+      {
+        "sequence": 0,
+        "path": "https://storage.googleapis.com/testerkastorage/bizigo/emir-royal-hotel10tbvzdx2f.rhm",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      },
+      {
+        "sequence": 0,
+        "path": "https://storage.googleapis.com/testerkastorage/bizigo/f88a8858-5c17-4bee-b9cf-0c698eff34f2",
+        "featured": false,
+        "type": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null
+      }
+    ],
+    "location": {
+      "longitude": " 35.777777",
+      "latitude": "36.666666"
+    },
+    "star": 0,
+    "cityName": "Adana",
+    "regionName": null,
+    "districtName": "Seyhan",
+    "countryName": "Türkiye",
+    "price": {
+      "amount": 625,
+      "currency": "TRY",
+      "symbol": "TL",
+      "averagePrice": 125,
+      "isDefault": true,
+      "averageRoomPrices": {
+        "singleSalePrice": 125,
+        "doubleSalePrice": 140,
+        "tripleSalePrice": 525,
+        "average": 125,
+        "currencyCode": null,
+        "singleSalePriceTotal": 0,
+        "doubleSalePriceTotal": 0,
+        "tripleSalePriceTotal": 0,
+        "selectedSalePriceId": 0,
+        "priceDays": null,
+        "areThereMultiplePriceLists": false,
+        "singlePurchasePrice": 0,
+        "doublePurchasePrice": 0,
+        "triplePurchasePrice": 0
+      }
+    },
+    "featureTypes": [
+      {
+        "id": null,
+        "type": null,
+        "name": "Lobi",
+        "isPay": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null,
+        "propertyInfo": null,
+        "isPaid": false
+      },
+      {
+        "id": null,
+        "type": null,
+        "name": "SPA",
+        "isPay": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null,
+        "propertyInfo": null,
+        "isPaid": false
+      },
+      {
+        "id": null,
+        "type": null,
+        "name": "Squash Sahası",
+        "isPay": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null,
+        "propertyInfo": null,
+        "isPaid": false
+      },
+      {
+        "id": null,
+        "type": null,
+        "name": "Açık Havuz",
+        "isPay": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null,
+        "propertyInfo": null,
+        "isPaid": false
+      },
+      {
+        "id": null,
+        "type": null,
+        "name": "Araç Kiralama",
+        "isPay": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null,
+        "propertyInfo": null,
+        "isPaid": false
+      },
+      {
+        "id": null,
+        "type": null,
+        "name": "Rehberlik Hizmeti",
+        "isPay": null,
+        "categorySequence": 0,
+        "categoryId": 0,
+        "categoryName": null,
+        "propertyInfo": null,
+        "isPaid": false
+      }
+    ],
+    "overall": null,
+    "policy": "available",
+    "policyTooltip": "Satın alabilirsiniz",
+    "roomNames": ["Standart Oda"],
+    "boardType": "Oda Kahvaltı",
+    "roomTypes": null,
+    "warningText": null,
+    "certificate": {
+      "id": 2,
+      "name": "Sürdürülebilir Turizm 1. Seviye",
+      "level": 1
+    },
+    "hotelCategoryTypes": [
+      {
+        "id": 14,
+        "name": "Otel"
+      }
+    ],
+    "isRecommended": false,
+    "roomSize": "5-12m2",
+    "roomBedType": "Queen",
+    "roomDescription": "Queen",
+    "specialPeriodClosure": false
+  }
+]

@@ -4,9 +4,17 @@ import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { Entypo } from '@expo/vector-icons';
 import AntDesign from '@expo/vector-icons/AntDesign';
 
+import { useFonts } from 'expo-font';
+
 const EventSummaryCard = ({ event }) => {
   const { name, location, dates, invitedPersonsCount, plannedPersonsCount } =
     event;
+
+  useFonts({
+    pr: require('../../../../assets/fonts/Poppins-Regular.ttf'),
+    pm: require('../../../../assets/fonts/Poppins-Medium.ttf'),
+    psb: require('../../../../assets/fonts/Poppins-SemiBold.ttf'),
+  });
 
   return (
     <View style={styles.wrapper}>
@@ -61,10 +69,10 @@ const styles = StyleSheet.create({
   },
   name: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontFamily: 'psb'
   },
   informationWrapper: {
-    marginTop: 30,
+    marginTop: 20,
     marginBottom: 30,
   },
   information: {
@@ -78,7 +86,8 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   informationText: {
-    fontSize: 18,
+    fontSize: 16,
+    fontFamily: 'pr'
   },
   seperator: {
     height: 1,
@@ -86,7 +95,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   bold: {
-    fontWeight: 'bold',
+    fontFamily: 'psb',
     fontSize: 16,
     marginRight: 5,
   },
@@ -95,11 +104,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   count: {
-    fontSize: 16
+    fontSize: 16,
+    fontFamily: 'pr'
   },
   button: {
     backgroundColor: 'rgb(53, 72, 209)',
-    padding: 12,
+    padding: 8,
     borderRadius: 8,
     width: 100,
     alignItems: 'center',
@@ -107,8 +117,9 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
   buttonText: {
-    fontSize: 20,
+    fontSize: 16,
     color: 'white',
+    fontFamily: 'pm'
   },
 });
 

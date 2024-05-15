@@ -15,6 +15,7 @@ import Requests from './pages/requests';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
+
   return (
     <NavigationContainer>
       <Stack.Navigator

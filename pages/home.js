@@ -7,9 +7,10 @@ import {
   Text,
   ScrollView,
   StyleSheet,
-  useWindowDimensions,
   TouchableOpacity,
 } from 'react-native';
+
+import { useFonts } from 'expo-font';
 
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
@@ -20,7 +21,11 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 import EventsSummary from '../components/homePage/eventsSummary';
 
 const Home = ({ navigation }) => {
-  const layout = useWindowDimensions();
+  useFonts({
+    pr: require('../assets/fonts/Poppins-Regular.ttf'),
+    pm: require('../assets/fonts/Poppins-Medium.ttf'),
+    psb: require('../assets/fonts/Poppins-SemiBold.ttf'),
+  });
 
   const menuItems = [
     {
@@ -125,18 +130,20 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: 'white',
     marginTop: 30,
+    fontFamily: 'pr'
   },
   subtitle: {
     fontSize: 36,
     color: 'white',
-    fontWeight: 'bold',
-    marginBottom: 10,
+    marginBottom: 12,
+    fontFamily: 'psb'
   },
   welcomeText: {
     fontSize: 18,
     color: 'white',
     marginTop: 10,
-    marginBottom: 40,
+    marginBottom: 30,
+    fontFamily: 'pr'
   },
   scrollView: {
     width: '100%',
@@ -146,8 +153,8 @@ const styles = StyleSheet.create({
   },
   menuItemWrapper: {
     flex: 1,
-    marginRight: 25,
     alignItems: 'center',
+    marginRight: 25
   },
   lastMenuItemWrapper: {
     marginRight: 50,
@@ -167,7 +174,7 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     color: 'white',
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily: 'pm'
   },
   eventsSummaryWrapper: {
     flex: 1,
