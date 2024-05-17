@@ -10,23 +10,23 @@ import {
 
 import { useFonts } from 'expo-font';
 
-import flightData from '../flightData.json';
+import flightData from '../../flightData.json';
 
-import FlightItem from '../components/flight/flightItem';
+import FlightItem from '../../components/flight/flightItem';
 
-const Flight = () => {
+const FlightList = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useFonts({
-    pr: require('../assets/fonts/Poppins-Regular.ttf'),
-    pm: require('../assets/fonts/Poppins-Medium.ttf'),
-    psb: require('../assets/fonts/Poppins-SemiBold.ttf'),
+    pr: require('../../assets/fonts/Poppins-Regular.ttf'),
+    pm: require('../../assets/fonts/Poppins-Medium.ttf'),
+    psb: require('../../assets/fonts/Poppins-SemiBold.ttf'),
   });
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 500);
   }, []);
 
   if (isLoading) {
@@ -114,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Flight;
+export default FlightList;

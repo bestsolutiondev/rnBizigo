@@ -5,28 +5,27 @@ import {
   Text,
   ScrollView,
   ActivityIndicator,
-  SafeAreaView
+  SafeAreaView,
 } from 'react-native';
 
 import { useFonts } from 'expo-font';
 
-import hotelData from '../hotelData.json';
+import hotelData from '../../hotelData.json';
+import HotelItem from '../../components/hotel/hotelItem';
 
-import HotelItem from '../components/hotel/hotelItem';
-
-const Hotel = () => {
+const HotelList = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useFonts({
-    pr: require('../assets/fonts/Poppins-Regular.ttf'),
-    pm: require('../assets/fonts/Poppins-Medium.ttf'),
-    psb: require('../assets/fonts/Poppins-SemiBold.ttf'),
+    pr: require('../../assets/fonts/Poppins-Regular.ttf'),
+    pm: require('../../assets/fonts/Poppins-Medium.ttf'),
+    psb: require('../../assets/fonts/Poppins-SemiBold.ttf'),
   });
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 500);
   }, []);
 
   if (isLoading) {
@@ -115,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Hotel;
+export default HotelList;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import {
@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 
 import { useFonts } from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
 
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
@@ -21,7 +22,7 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 import EventsSummary from '../components/homePage/eventsSummary';
 
 const Home = ({ navigation }) => {
-  useFonts({
+  const [fontsLoaded, fontError] = useFonts({
     pr: require('../assets/fonts/Poppins-Regular.ttf'),
     pm: require('../assets/fonts/Poppins-Medium.ttf'),
     psb: require('../assets/fonts/Poppins-SemiBold.ttf'),
@@ -29,41 +30,46 @@ const Home = ({ navigation }) => {
 
   const menuItems = [
     {
-      icon: <MaterialIcons name="flight" size={32} color="white" />,
+      icon: <MaterialIcons name="flight" size={30} color="white" />,
       text: 'Uçuş',
-      route: 'Flight',
+      route: 'FlightList',
     },
     {
       icon: (
-        <FontAwesome style={styles.img} name="hotel" size={32} color="white" />
+        <FontAwesome style={styles.img} name="hotel" size={28} color="white" />
       ),
       text: 'Otel',
-      route: 'Hotel',
+      route: 'HotelList',
     },
     {
-      icon: <FontAwesome6 name="suitcase-rolling" size={32} color="white" />,
-      text: 'Otel + Uçuş',
-      route: 'Package',
-    },
-    {
-      icon: <FontAwesome5 name="car" size={32} color="white" />,
+      icon: <FontAwesome5 name="car" size={28} color="white" />,
       text: 'Araç Kiralama',
       route: 'Car',
     },
     {
-      icon: <MaterialIcons name="group" size={32} color="white" />,
+      icon: <MaterialIcons name="group" size={28} color="white" />,
       text: 'Etkinlikler',
       route: 'Events',
     },
     {
-      icon: <AntDesign name="filetext1" size={32} color="white" />,
+      icon: <AntDesign name="filetext1" size={28} color="white" />,
       text: 'Talepler',
       route: 'Requests',
     },
   ];
 
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded || fontError) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded, fontError]);
+
+  if (!fontsLoaded && !fontError) {
+    return null;
+  }
+
   return (
-    <SafeAreaView style={styles.wrapper}>
+    <SafeAreaView style={styles.wrapper} onLayoutRootView={onLayoutRootView}>
       <LinearGradient
         colors={['#3548d1', '#1060ba']}
         style={styles.linearGradient}
@@ -110,6 +116,7 @@ const Home = ({ navigation }) => {
       <View style={styles.eventsSummaryWrapper}>
         <EventsSummary />
       </View>
+
     </SafeAreaView>
   );
 };
@@ -120,7 +127,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   linearGradient: {
-    flex: 0.8,
+    flex: 0.85,
     paddingTop: 30,
   },
   welcomeWrapper: {
@@ -130,20 +137,20 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: 'white',
     marginTop: 30,
-    fontFamily: 'pr'
+    fontFamily: 'pr',
   },
   subtitle: {
     fontSize: 36,
     color: 'white',
-    marginBottom: 12,
-    fontFamily: 'psb'
+    marginBottom: 14,
+    fontFamily: 'psb',
   },
   welcomeText: {
     fontSize: 18,
     color: 'white',
     marginTop: 10,
     marginBottom: 30,
-    fontFamily: 'pr'
+    fontFamily: 'pr',
   },
   scrollView: {
     width: '100%',
@@ -154,7 +161,7 @@ const styles = StyleSheet.create({
   menuItemWrapper: {
     flex: 1,
     alignItems: 'center',
-    marginRight: 25
+    marginRight: 24,
   },
   lastMenuItemWrapper: {
     marginRight: 50,
@@ -162,8 +169,8 @@ const styles = StyleSheet.create({
   imgWrapper: {
     justifyContent: 'center',
     alignItems: 'center',
-    height: 62,
-    width: 62,
+    height: 60,
+    width: 60,
     backgroundColor: '#18d68f',
     borderRadius: 50,
   },
@@ -174,7 +181,7 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     color: 'white',
     fontSize: 16,
-    fontFamily: 'pm'
+    fontFamily: 'pm',
   },
   eventsSummaryWrapper: {
     flex: 1,

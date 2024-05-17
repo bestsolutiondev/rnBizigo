@@ -1,6 +1,10 @@
 import React from 'react';
+
 import { StyleSheet, View, TouchableOpacity, Text, Image } from 'react-native';
+
 import { useFonts } from 'expo-font';
+
+import { useNavigation } from '@react-navigation/native';
 
 const HotelItem = ({ hotel }) => {
   useFonts({
@@ -9,8 +13,13 @@ const HotelItem = ({ hotel }) => {
     psb: require('../../assets/fonts/Poppins-SemiBold.ttf'),
   });
 
+  const navigation = useNavigation();
+
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={() => navigation.navigate('HotelDetail', { hotel: hotel })}
+    >
       <View style={styles.imgWrapper}>
         <Image
           style={styles.img}
@@ -78,11 +87,10 @@ const styles = StyleSheet.create({
     color: '#2f3c4e',
     textAlign: 'center',
   },
-  rate:{
-
+  rate: {
     fontFamily: 'pm',
-    color: 'black'
-  }, 
+    color: 'black',
+  },
   price: {
     fontFamily: 'psb',
     fontSize: 21,
